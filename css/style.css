@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
 }
 .fondo-header{
     background-color: rgb(84, 84, 84);
 }
 body{
-
+    height: 100vh;
 }
 .logo{
     width: 50px;
@@ -27,10 +27,97 @@ body{
     color: black;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 .nav{
     background-color: aqua;
+}
+
+.footer{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    margin-top: 80px;
+    height: 40%;
+
+}
+.footer .row{
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer.col-12.titulo_footer{
+    padding: 30px;
+}
+
+/*SECCION SERVICIOS*/
+.servicios_seccion{
+
+    
+}
+.card{
+    background-color: rgb(182, 182, 182);
+    border-radius: 20px;
+    margin: 70px 70px;
+}
+
+.titulo_tarjeta{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.titulo_tarjeta2{
+    font-size: 30px;
+    padding: 20px;
+}
+.btn{
+    margin: 20px;
+    padding: 7px 70px;
+    font-size: 20px;
+}
+
+/*MEDIA QUERIES*/
+@media(width < 576px){
+    .servicios_seccion{
+       
+        width: 100%;
+    }
+    .servicios_seccion .col-12{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .servicios_seccion .row{
+        width: 100%;
+    }
+   .col-12 .card{
+        background-color: rgb(182, 182, 182);
+        border-radius: 20px;
+        width: ;
+        
+    }
+    .servicios_seccion.row.col-12.card.card-body{
+        
+        
+    }
+   
+    
+    .titulo_tarjeta{
+    
+        font-size: 30px;
+        font-weight: bold;
+    
+    }
+    .titulo_tarjeta2{
+        font-size: 20px;
+        
+    }
+    .btn{
+        font-size: 20px;
+        margin: 0;
+        padding: 20px 50px;
+    }
 }
