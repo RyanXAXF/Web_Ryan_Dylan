@@ -1,20 +1,70 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
-.fondo-header{
-    background-color: rgb(84, 84, 84);
-}
+
 body{
-    height: 100vh;
-
-
-    background: rgb(255,70,70);
-    background: radial-gradient(circle, rgba(255,70,70,1) 0%, rgba(97,25,25,1) 100%);
+    background-color: rgb(93, 93, 93);
+    padding: 0;
+    margin: 0;
 }
+
+header{
+    background-color: rgb(84, 84, 84);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    position: relative;
+    top: 15px;
+}
+
+nav{
+    background-color: rgb(84, 84, 84);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    color: #545454;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #3ea7f2;
+    transition: .1s;
+}
+
+.checkbtn{
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+}
+
+#check{
+    display: none;
+}
+
+
 .logo{
     width: 50px;
+    position: relative;
+    left: 15px;
 }
 .header{
     padding: 0;
@@ -25,119 +75,64 @@ body{
     display: inline-block;
     position: relative;
     top: 5px;
-    left: 5px;
+    left: 15px;
     background-color: rgb(84, 84, 84);
     text-decoration: none;
     color: black;
 }
 
-
-
-.nav{
-    background-color: aqua;
-}
-
-/*FOOTER*/
-
-.footer{
-    background-color: rgb(46, 46, 46);
-    color: white;
-    margin-top: 80px;
-    height: auto;
-    min-height: 40%;
-    padding: 30px;
-   
-
-}
-
-div.col-12.col-md-3{
-    display: flex;
-    flex-direction: column;
-}
-.footer a{
+a{
     text-decoration: none;
-    color: white;
-    margin-bottom: 20px;
-}
-.footer a:hover{
-    text-decoration: none;
-    color: rgb(133, 133, 133);
-    
-}
-.footer.col-12.titulo_footer{
-    padding: 30px;
 }
 
-/*SECCION SERVICIOS*/
-.servicios_seccion{
 
-    
-}
-.card{
-    background-color: rgb(182, 182, 182);
-    border-radius: 20px;
-    margin: 70px 70px;
-    min-width: 90%;
-}
 
-.titulo_tarjeta{
-    padding: 20px;
-    font-size: 50px;
-    font-weight: bold;
-
-}
-.titulo_tarjeta2{
-    font-size: 30px;
-    padding: 20px;
-}
-.btn{
-    margin: 20px;
-    padding: 7px 70px;
-    font-size: 20px;
-}
-
-/**/
-
-/*MEDIA QUERIES*/
-@media(width < 576px){
-    .servicios_seccion{
-       
-        width: 100%;
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
     }
-    .servicios_seccion .col-12{
+}
+
+@media (max-width: 858px){
+    .checkbtn{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        
     }
-    .servicios_seccion .row{
+    nav{
+        padding: 0 19px;
+    }
+    ul{
+        position: absolute;
         width: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgb(84, 84, 84);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 10;
     }
-   .col-12 .card{
-        background-color: rgb(182, 182, 182);
-        border-radius: 20px;
-        width: ;
-        
+    nav ul li{
+    background-color: #2b2b2b;
+    padding: 10px;
+    margin: 20px 20%;
+    position: relative;
+    bottom: 50px;
     }
-    .servicios_seccion.row.col-12.card.card-body{
-        
-        
-    }
-   
-    
-    .titulo_tarjeta{
-    
-        font-size: 30px;
-        font-weight: bold;
-    
-    }
-    .titulo_tarjeta2{
+    nav ul li a{
         font-size: 20px;
-        
     }
-    .btn{
-        font-size: 20px;
-        margin: 0;
-        padding: 20px 50px;
+    li a:hover, li a.active{
+        background-color: rgb(84, 84, 84);
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .banner .btnServices{
+        /*margin-top: 3rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.3rem;*/
     }
 }
