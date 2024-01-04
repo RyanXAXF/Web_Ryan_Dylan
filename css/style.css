@@ -8,8 +8,6 @@
 }
 body{
     height: 100vh;
-
-
     background: rgb(255,70,70);
     background: radial-gradient(circle, rgba(255,70,70,1) 0%, rgba(97,25,25,1) 100%);
 }
@@ -35,6 +33,46 @@ body{
 
 .nav{
     background-color: aqua;
+}
+
+
+/*SECCION SERVICIOS*/
+.servicios_seccion{
+
+    
+}
+.card{
+    background-color: rgb(182, 182, 182);
+    border-radius: 20px;
+    margin: 70px 70px;
+    min-width: 90%;
+}
+
+.titulo_tarjeta{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.titulo_tarjeta2{
+    font-size: 30px;
+    padding: 20px;
+}
+.btn{
+    margin: 20px;
+    padding: 7px 70px;
+    font-size: 20px;
+}
+
+/*Internet Seccion*/
+.internet_seccion{
+    max-width: 100%;
+}
+.card{
+    background-color: rgb(182, 182, 182);
+    border-radius: 20px;
+    margin: 50px 50px;
+    min-width: 60%;
 }
 
 /*FOOTER*/
@@ -67,36 +105,6 @@ div.col-12.col-md-3{
 .footer.col-12.titulo_footer{
     padding: 30px;
 }
-
-/*SECCION SERVICIOS*/
-.servicios_seccion{
-
-    
-}
-.card{
-    background-color: rgb(182, 182, 182);
-    border-radius: 20px;
-    margin: 70px 70px;
-    min-width: 90%;
-}
-
-.titulo_tarjeta{
-    padding: 20px;
-    font-size: 50px;
-    font-weight: bold;
-
-}
-.titulo_tarjeta2{
-    font-size: 30px;
-    padding: 20px;
-}
-.btn{
-    margin: 20px;
-    padding: 7px 70px;
-    font-size: 20px;
-}
-
-/**/
 
 /*MEDIA QUERIES*/
 @media(width < 576px){
