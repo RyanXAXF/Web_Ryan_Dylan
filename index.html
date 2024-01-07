@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Web_Ryan_Dylan/css/normalize.css/normalize.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -27,14 +28,29 @@
                         <label for="check" class="checkbtn">
                             <i class="fas fa-bars"></i>
                         </label>
-                        <ul>
+                        <!--<ul>
                             <li><a href='#'>Servicioss</a></li>
                             <li><a href='#'>Planes</a></li>
                             <li><a href='#'>Mi linea</a></li>
                             <li><a href='#'>Pagos/Factura</a></li>
                             <li><a href='#'>Ayuda</a></li>
                             <li><a href='#'>salir</a></li>        
-                        </ul>                                       <!--Cuando se inicia sesion-->
+                        </ul>-->                                       <!--Cuando se inicia sesion-->
+                        <div class="sesion">
+                            <form class="formulario">
+                                <div class="gmail">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo@gmail.com">
+                                </div>
+                                <div class="password">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                                </div>
+                                <a href="../Web_Ryan_Dylan/pages/recuperar.html" class="olvido">¿has olvidado tu contraseña?</a>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                              </form>
+                        </div>
                     </nav>
                 </div>
             </div>
